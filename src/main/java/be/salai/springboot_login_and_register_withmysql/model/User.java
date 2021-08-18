@@ -1,4 +1,4 @@
-package be.salai.springboot_login_and_register_withmysql;
+package be.salai.springboot_login_and_register_withmysql.model;
 
 import javax.persistence.*;
 

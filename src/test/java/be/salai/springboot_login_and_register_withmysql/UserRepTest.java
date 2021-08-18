@@ -1,6 +1,7 @@
 package be.salai.springboot_login_and_register_withmysql;
 
 
+import be.salai.springboot_login_and_register_withmysql.model.User;
 import be.salai.springboot_login_and_register_withmysql.repositories.UserRep;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

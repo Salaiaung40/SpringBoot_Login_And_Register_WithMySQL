@@ -2,20 +2,22 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Thymeleaf Page Example</title>
+    <title>Thymeleaf Home Page Example</title>
+    <link rel="stylesheet"  th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
     <link rel="stylesheet" th:href="@{/homeStyle.css}" />
-<!--    <link rel="stylesheet" href="../static/homeStyle.css">-->
+
+<!--    <link rel="stylesheet" href="../static/homeStyle.css">/5.1.0   th:type="text/css" -->
 
 </head>
 <body>
-<div class ="main_container">
+<div class ="container">
     <div class = "header">
         <h2>Hello from SpringBoot Login and Register with MySQL Home Page !</h2>
     </div>
-    <div class="Login_Form">
-        <form th:inputmode="tex" th:placeholder="e-mailaddress" > email address</form>
-
+    <div class="loginPage">
+        <h3><a th:href="@{/templates/login.html}"> Login </a> </h3>
     </div>
+
 
 
 </div>
