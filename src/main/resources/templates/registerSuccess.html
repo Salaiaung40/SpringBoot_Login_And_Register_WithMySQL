@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Registered / Author detail Setting Page </title>
-  <link rel="stylesheet"  th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
 
 </head>
 <body>
 <div class="container">
-  <h1> Your registration is successfully done !!! </h1>
+
+    <h1> Your registration is successfully done !!! </h1>
+    <h3>You are Log in as <b>[[${#request.userPrincipal.principal.fullName}]]</b> </h3>
+
+
+    <div class="logout">
+        <form th:action="@{/logout}" th:method="post">
+            <input type="submit" value="Sign Out">
+<!--            <button type="submit" class="logoutbtn" th:value="" Sign Out>LogOut</button>-->
+        </form>
+    </div>
 </div>
 
 </body>
