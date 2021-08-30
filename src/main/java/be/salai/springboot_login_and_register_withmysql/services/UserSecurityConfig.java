@@ -51,6 +51,7 @@ public class UserSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().permitAll()
                 .and()
                 .formLogin()
+//                .loginPage("/login")
                 .usernameParameter("email")
                 .defaultSuccessUrl("/registerSuccess") //this will be the landing page after login
                 .permitAll()
